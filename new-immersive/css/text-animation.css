@@ -1,0 +1,9 @@
+.text-animation-1 h1 {
+    text-align: center;
+    font-size: 6rem;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    line-height: 150px;
+    letter-spacing: 10px;
+}

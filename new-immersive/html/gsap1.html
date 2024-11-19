@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .slide {
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .slide:nth-child(1){
+            background-color: lightblue;
+        }
+
+        .slide:nth-child(2){
+            background-color: lightgreen;
+        }
+
+        .wrapper {
+            display: flex;
+            width: 200vw;
+            transform: rotate(90deg) translateY(-100vh);
+            transform-origin: top left;
+        }
+
+        .container {
+            height: 100vw;
+            width: 100vh;
+            transform: rotate(-90deg) translateX(-100vh);
+            transform-origin: top left;
+            position: absolute;
+            overflow-y: scroll;
+        }
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div>
+
+        <div class="container">
+            <div class="wrapper">
+                <div class="slide"></div>
+                <div class="slide"></div>
+            </div>
+        </div>
+        <div style="height: 100vh; background: #000;">
+
+        </div>
+    </div>
+
+    <script>
+        let cont = document.querySelector('.container');
+        let layer = document.querySelectorAll('layer')
+
+        cont.onscroll = function(){
+            let X = cont.scrollTop;
+
+            layer[0].style.left = X/4 + 'px';
+            layer[1].style.left = X/8 + 'px';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stacked Cards</title>
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Card Link -->
+     <link rel="stylesheet" href="/css/card.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    
+  </head>
+  <body>
+    <div class="stack-area w-full h-[300vh] relative flex justify-center px-6 lg:px-20 xl:px-40 2xl:px-50">
+        <div class="left">
+            <div class="h-full w-full flex flex-col justify-center text-2xl 2xl:text-8xl font-bold uppercase py-7">
+                <div class="border-l-4 border-[#107A71] pl-8">
+                    <p class="mb-5">Empower </p>
+                    <p class="mb-5">Your <span class="text-[#107A71]">People</span>,</p>
+                    <p class="mb-5">Elevate Your</p>
+                    <p class="w-fit px-5 pb-2 text-white bg-[#FAA045]">Business</p>
+                </div>
+                
+                <p class="sebheading text-[#787878] text-lg md:text-2xl mt-8 pl-8 font-medium">
+                    Discover a seamless HR solution designed to streamline your processes and drive success in a dynamic, ever-evolving business landscape.
+                </p>
+            </div>
+        </div>
+        <div class="right">
+            <div class="cards w-full h-full relative text-[#ffff]">
+                <div class="card w-[400px] h-[400px] box-border p-[35px] rounded-[6mm] flex flex-col justify-between absolute top-1/2 left-1/2 transition duration-500 ease-in-out">
+                    <div class="sub text-xl font-bold">Simplified</div>
+                    <div class="content text-[44px] font-bold leading-tight">Complex tasks are now simple</div>
+                </div>
+                <div class="card w-[400px] h-[400px] box-border p-[35px] rounded-[6mm] flex flex-col justify-between absolute top-1/2 left-1/2 transition duration-500 ease-in-out">
+                    <div class="sub text-xl font-bold">Boost Productivity</div>
+                    <div class="content text-[44px] font-bold leading-tight">Perform Tasks in less time</div>
+                </div>
+                <div class="card w-[400px] h-[400px] box-border p-[35px] rounded-[6mm] flex flex-col justify-between absolute top-1/2 left-1/2 transition duration-500 ease-in-out">
+                    <div class="sub text-xl font-bold">Facilitated learning</div>
+                    <div class="content text-[44px] font-bold leading-tight">train anyone from anywhere</div>
+                </div>
+                <div class="card w-[400px] h-[400px] box-border p-[35px] rounded-[6mm] flex flex-col justify-between absolute top-1/2 left-1/2 transition duration-500 ease-in-out">
+                    <div class="sub text-xl font-bold">Support</div>
+                    <div class="content text-[44px] font-bold leading-tight">Now its 24/7 support</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/card.js"></script>
+
+  </body>
+</html>
